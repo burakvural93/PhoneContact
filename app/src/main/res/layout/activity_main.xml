@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.asus.burakphonecontact.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/Radio">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Vodafone"
+            android:onClick="VodafoneButtonClick"
+            android:id="@+id/VodafoneRadio"
+            android:shadowColor="#4e0e0e" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avea"
+            android:checked="true"
+            android:onClick="AveaButtonClick"
+            android:id="@+id/AveaRadio"
+            android:shadowColor="#7b1111" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turkcell"
+            android:onClick="TurkcellButtonClick"
+            android:id="@+id/TurkcellRadio"
+            />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Contacts "
+                android:onClick="run"
+                android:id="@+id/AllRadio"
+                />
+
+                </RadioGroup>
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/ContactlistView"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK-UP"
+            android:onClick="BackUpRun"
+            android:id="@+id/BackUpbutton"
+            android:layout_marginLeft="50dp"
+
+           />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECOVER"
+        android:id="@+id/Recoverbutton"
+        android:onClick="RecoverRun"
+        android:layout_marginLeft="80dp"
+
+
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
